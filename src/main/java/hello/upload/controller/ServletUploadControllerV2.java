@@ -62,7 +62,7 @@ public class ServletUploadControllerV2 {
             String body = StreamUtils.copyToString(inputStream, StandardCharsets.UTF_8);
             log.info("body={}", body);
 
-            //파일에 저장하기
+            // 파일에 저장하기
             if (StringUtils.hasText(part.getSubmittedFileName())) {
                 String fullPath = fileDir + part.getSubmittedFileName();
                 log.info("파일 저장 fullPath={}", fullPath);
